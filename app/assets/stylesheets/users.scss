@@ -1,0 +1,154 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.load {
+    font-size: 25px;
+    color: #361d32;
+    text-align: center;
+}
+
+.acc_block {
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #361d32;
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: 20px;
+
+            a,
+            button {
+                margin: 0;
+                cursor: pointer;
+                background: none;
+                text-decoration: none;
+                color: #f55951;
+                padding: 10px;
+                border: 2px solid #f55951;
+                font-size: 18px;
+                font-weight: bold;
+                transition: .3s ease-in-out;
+            }
+            a:hover,
+            button:hover {
+                background: #f55951;
+                color: #f1e8e6;
+            }
+        }
+    }
+}
+.admin,
+.user {
+    width: 40%;
+}
+
+.log_in,
+.new_password,
+.sign_up,
+.edit_account,
+.reset_password {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    width: 30%;
+    padding: 20px;
+    font-size: 19px;
+
+    .submit {
+        background: white;
+        cursor: pointer;
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #f55951;
+        font-weight: bold;
+        border: 1.5px solid #f55951;
+        transition: .3s ease-in-out;
+    }
+    .submit:hover {
+        background: #f55951;
+        color: #f1e8e6;
+        transition: .3s ease-in-out;
+    }
+    .field p input {
+        background: white;
+        color: #543c52;
+        font-size: 19px;
+        margin: 10px 0 10px 0;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid #361d32;
+        outline: none;
+    }
+}
+.edit_account {
+    width: 40%;
+    .field p .required {
+        border-bottom: 1px solid #f55951;
+    }
+}
+.sign_up em,
+.edit_account em {
+    font-size: 15px;
+}
+
+.new_admin {
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #361d32;
+    width: 40%;
+    text-align: left;
+
+    h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    p {
+        font-size: 17px;
+
+        button {
+            cursor: pointer;
+            color: #f55951;
+            padding: 10px;
+            border: 2px #f55951 solid;
+            background: none;
+            margin: 10px;
+            font-size: 17px;
+            text-align: right;
+            transition: .3s ease-in-out;
+            outline: none;
+        }
+        button:hover {
+            background: #f55951;
+            color: #f1e8e6;
+            transition: .3s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+<%= react_component("Header/Header") %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= react_component("Account/SignIn", { errorMessage: alert }) %>
+<% end %>

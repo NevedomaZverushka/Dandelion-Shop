@@ -1,0 +1,31 @@
+.header {
+    margin-bottom: 20px;
+    background: #543c52;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        li {
+            margin: 20px;
+            display: inline-block;
+            font-size: 20px;
+
+            a {
+                font-weight: bold;
+                color: #f1e8e6;
+                text-decoration: none;
+                transition: .3s ease-in-out;
+            }
+            a:hover {
+                color: #f55951;
+                transition: .3s ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.add_form {
+    padding: 30px;
+    margin: auto;
+    width: 30%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font-size: 19px;
+    color: #543c52;
+}
+.add_form form p input {
+    color: #543c52;
+    font-size: 19px;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #361d32;
+    outline: none;
+}
+.add_form form p input[type=number]::-webkit-inner-spin-button,
+.add_form form p input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.add_form form p textarea {
+    width: 100%;
+    font-size: 15px;
+    margin: 10px 0 10px 0;
+    border: 1px solid #361d32;
+    outline: none;
+}
+.add_form form p input :active,
+.add_form form p textarea :active {
+    outline: none;
+}
+.add_form form .submit {
+    background: white;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f55951;
+    font-weight: bold;
+    border: 1.5px solid #f55951;
+    transition: .3s ease-in-out;
+}
+.add_form form .submit:hover {
+    background: #f55951;
+    color: #f1e8e6;
+    transition: .3s ease-in-out;
+}
+.add_form .file {
+    border: none;
+}
