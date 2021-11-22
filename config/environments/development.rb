@@ -113,5 +113,5 @@ Rails.application.configure do
   }
 
   #ActiveModelSerializers.config.serializer_lookup_enabled = false
-  
+  config.webpacker.check_yarn_integrity = false
 end
