@@ -3,11 +3,20 @@ class UserSerializer < ActiveModel::Serializer
 
   def orders
     set_id = []
-    Order.where(user_id: object.id).map{ |order|
-      if !set_id.include?(order.order_id)
-        set_id.push(order.order_id)
-        OrderSerializer.new(order)
-      end
-    }.compact
+    if current_user.role == 1
+      Order.all().map{ |order|
+        if !set_id.include?(order.order_id)
+          set_id.push(order.order_id)
+          OrderSerializer.new(order)
+        end
+      }.compact
+    else
+      Order.where(user_id: object.id).map{ |order|
+        if !set_id.include?(order.order_id)
+          set_id.push(order.order_id)
+          OrderSerializer.new(order)
+        end
+      }.compact
+    end
   end
 end

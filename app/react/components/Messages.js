@@ -10,7 +10,7 @@ import React, { useEffect } from "react";
 //             }
 //         }
 //     })
-    
+
 //     return (
 //         <div className='popup'>
 //             <div className='popup_inner' style={{backgroundColor: props.color ? props.color : 'none' }}>
@@ -20,29 +20,29 @@ import React, { useEffect } from "react";
 //     )
 // }
 
-export default class Messages extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            flag: true
-        }
-    }
-    componentDidMount() {
-        window.onclick = function(event) {
-            console.log('here')
-            if (event.target !== document.getElementById('popup_inner')) {
-                props.closePopup()
-            }
-        }
-    }
-    
-    render() {
-        return (
-            <div className='popup'>
-                <div id="popup_inner" className='popup_inner' style={{backgroundColor: this.props.color ? this.props.color : 'none' }}>
-                    <h1>{this.props.message ? this.props.message : "Ошибка!"}</h1>
-                </div>
-            </div>
-        )
-    }
-}
+const Messages = ({ closePopup, color, message }) => {
+  useEffect(() => {
+    window.onclick = function (event) {
+      console.log("here");
+      if (event.target !== document.getElementById("popup_inner")) {
+        closePopup();
+      }
+    };
+  }, []);
+
+  return (
+    <div className="popup">
+      <div
+        id="popup_inner"
+        className="popup_inner"
+        style={{
+          backgroundColor: color || "none",
+        }}
+      >
+        <h1>{message || "Ошибка!"}</h1>
+      </div>
+    </div>
+  );
+};
+
+export default Messages;
